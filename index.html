@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nomad Stories — истории, маршруты и вдохновение для путешествий по Казахстану.">
+  <title>Nomad Stories — Путешествия по Казахстану</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Nomad Stories — главная">
+      <span class="brand-mark">N<span>·</span></span>
+      <span class="brand-name">Nomad <b>Stories</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a class="active" href="#home">Главная</a>
+      <a href="#stories">Истории</a>
+      <a href="#destinations">Направления</a>
+      <a href="#tips">Советы</a>
+      <a href="#suggest">Предложить маршрут</a>
+    </nav>
+    <a class="login-link" href="#newsletter">Войти <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light"><span></span> Казахстан — страна бесконечных горизонтов</p>
+        <h1>Nomad<br><em>Stories</em></h1>
+        <p class="hero-subtitle">Путешествия по Казахстану</p>
+        <p class="hero-copy">Откройте для себя удивительные маршруты, величественную природу, уникальную культуру и настоящие истории людей, которые живут этим краем.</p>
+        <form class="search-box" id="searchForm">
+          <span class="search-icon">⌕</span>
+          <input id="destinationSearch" type="search" placeholder="Куда вы хотите отправиться?" aria-label="Куда вы хотите отправиться?">
+          <button type="submit" aria-label="Найти направление">Найти <span>↗</span></button>
+        </form>
+        <div class="hero-note"><span class="note-line"></span> Больше, чем просто путешествие</div>
+      </div>
+      <div class="hero-bottom">
+        <span>01 / 05</span><span class="hero-bottom-line"></span><span>Исследуй. Чувствуй. Запоминай.</span>
+      </div>
+      <a class="scroll-cue" href="#explore" aria-label="Прокрутить вниз">↓</a>
+    </section>
+
+    <section class="quick-links section-wrap" id="explore" aria-label="Что посмотреть">
+      <a class="quick-item" href="#destinations"><span class="quick-number">01</span><span class="quick-icon">⌁</span><span><b>Природа</b><small>Горы, озёра, каньоны, пустыни</small></span><span class="arrow">↗</span></a>
+      <a class="quick-item" href="#stories"><span class="quick-number">02</span><span class="quick-icon">✳</span><span><b>Культура</b><small>Традиции, города, история</small></span><span class="arrow">↗</span></a>
+      <a class="quick-item" href="#destinations"><span class="quick-number">03</span><span class="quick-icon">⌖</span><span><b>Маршруты</b><small>Готовые и авторские путешествия</small></span><span class="arrow">↗</span></a>
+      <a class="quick-item" href="#stories"><span class="quick-number">04</span><span class="quick-icon">▧</span><span><b>Фото</b><small>Вдохновляющие кадры</small></span><span class="arrow">↗</span></a>
+      <a class="quick-item" href="#tips"><span class="quick-number">05</span><span class="quick-icon">✧</span><span><b>Советы</b><small>Полезная информация для путешественников</small></span><span class="arrow">↗</span></a>
+    </section>
+
+    <section class="section-wrap stories-section" id="stories">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span></span> Живые впечатления</p><h2>Популярные <em>истории</em></h2><p class="section-intro">Реальные путешествия, яркие впечатления, вдохновляющие рассказы.</p></div>
+        <a class="text-link" href="#storiesGrid">Все истории <span>↗</span></a>
+      </div>
+      <div class="filter-row" aria-label="Фильтр историй">
+        <button class="filter-btn active" data-filter="all">Все истории</button>
+        <button class="filter-btn" data-filter="nature">Природа</button>
+        <button class="filter-btn" data-filter="routes">Маршруты</button>
+        <button class="filter-btn" data-filter="culture">Культура</button>
+        <button class="filter-btn" data-filter="tips">Советы</button>
+      </div>
+      <div class="stories-grid" id="storiesGrid">
+        <article class="story-card" data-category="nature" data-search="большое алматинское озеро тянь шань природа горы">
+          <a class="story-image image-lake" href="#suggest" aria-label="Большое Алматинское озеро"><span class="card-category">Природа</span><span class="image-arrow">↗</span></a>
+          <div class="story-meta"><span>5 мин чтения</span><span>12 фото</span></div>
+          <h3><a href="#suggest">Большое Алматинское озеро — жемчужина Тянь-Шаня</a></h3>
+          <p>Бирюзовая вода, горные вершины и тишина высокогорья — место, которое остаётся в памяти.</p>
+          <a class="read-link" href="#suggest">Читать историю <span>→</span></a>
+        </article>
+        <article class="story-card" data-category="routes" data-search="чарынский каньон казахстанский гранд каньон маршрут">
+          <a class="story-image image-canyon" href="#suggest" aria-label="Чарынский каньон"><span class="card-category">Маршруты</span><span class="image-arrow">↗</span></a>
+          <div class="story-meta"><span>7 мин чтения</span><span>18 фото</span></div>
+          <h3><a href="#suggest">Чарынский каньон — казахстанский Гранд-Каньон</a></h3>
+          <p>Причудливые скалы, бескрайнее небо и путь среди древних каменных исполинов.</p>
+          <a class="read-link" href="#suggest">Читать историю <span>→</span></a>
+        </article>
+        <article class="story-card" data-category="culture" data-search="кочевая жизнь юрта культура традиции кочевники">
+          <a class="story-image image-yurt" href="#suggest" aria-label="Кочевая юрта"><span class="card-category">Культура</span><span class="image-arrow">↗</span></a>
+          <div class="story-meta"><span>6 мин чтения</span><span>15 фото</span></div>
+          <h3><a href="#suggest">Кочевая жизнь: как живут современные кочевники</a></h3>
+          <p>Традиции гостеприимства и мудрость степи, которые продолжают жить сегодня.</p>
+          <a class="read-link" href="#suggest">Читать историю <span>→</span></a>
+        </article>
+        <article class="story-card" data-category="tips" data-search="что взять с собой поход казахстан советы">
+          <a class="story-image image-hike" href="#suggest" aria-label="Поход по горам"><span class="card-category">Советы</span><span class="image-arrow">↗</span></a>
+          <div class="story-meta"><span>4 мин чтения</span><span>10 фото</span></div>
+          <h3><a href="#tips">Что взять с собой в поход по Казахстану</a></h3>
+          <p>Практичный список вещей, чтобы чувствовать себя уверенно на горной тропе.</p>
+          <a class="read-link" href="#tips">Читать историю <span>→</span></a>
+        </article>
+      </div>
+      <p class="empty-state" id="emptyStories" hidden>По вашему запросу ничего не найдено. Попробуйте другое направление.</p>
+    </section>
+
+    <section class="destinations-section" id="destinations">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span></span> Выберите свой путь</p><h2>Популярные <em>направления</em></h2><p class="section-intro">Уникальные места, которые стоит увидеть хотя бы раз в жизни.</p></div>
+          <a class="text-link" href="#suggest">Все направления <span>↗</span></a>
+        </div>
+        <div class="destinations-grid">
+          <a class="destination destination-almaty" href="#suggest" data-destination="Алматы"><span class="destination-index">01 / ГОРОД И ГОРЫ</span><span class="destination-title">Алматы</span><span class="destination-desc">Горы, город, вдохновение</span><span class="destination-arrow">↗</span></a>
+          <a class="destination destination-burabay" href="#suggest" data-destination="Бурабай"><span class="destination-index">02 / ОЗЁРА И ЛЕСА</span><span class="destination-title">Бурабай</span><span class="destination-desc">Озёра и сосны</span><span class="destination-arrow">↗</span></a>
+          <a class="destination destination-charyn" href="#suggest" data-destination="Чарынский каньон"><span class="destination-index">03 / ПРИРОДА</span><span class="destination-title">Чарынский каньон</span><span class="destination-desc">Величие природы</span><span class="destination-arrow">↗</span></a>
+          <a class="destination destination-mangystau" href="#suggest" data-destination="Мангистау"><span class="destination-index">04 / НЕЗЕМНЫЕ ПЕЙЗАЖИ</span><span class="destination-title">Мангистау</span><span class="destination-desc">Космос на Земле</span><span class="destination-arrow">↗</span></a>
+          <a class="destination destination-kolsai" href="#suggest" data-destination="Кольсайские озёра"><span class="destination-index">05 / ТИШИНА И ГАРМОНИЯ</span><span class="destination-title">Кольсайские озёра</span><span class="destination-desc">Тишина и гармония</span><span class="destination-arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto section-wrap">
+      <div class="manifesto-image" role="img" aria-label="Закат над горами Казахстана"></div>
+      <div class="manifesto-content"><p class="eyebrow light"><span></span> Твоя история начинается здесь</p><h2>Соберите свой<br><em>идеальный маршрут!</em></h2><p>Неважно, ищете ли вы тихое озеро, дорогу через степь или новые впечатления в горах. Казахстан полон мест, которые ждут именно вас.</p><a class="button button-light" href="#suggest">Создать маршрут <span>↘</span></a></div>
+      <div class="manifesto-stamp">GO<br>BEYOND<br>THE MAP</div>
+    </section>
+
+    <section class="section-wrap tips-section" id="tips">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span></span> Путешествуй с умом</p><h2>Советы для <em>путешествий</em></h2><p class="section-intro">Небольшая подготовка — больше свободы и впечатлений в дороге.</p></div>
+      </div>
+      <div class="tips-grid">
+        <article class="tip-card"><span class="tip-number">01</span><span class="tip-icon">↗</span><h3>Планируйте заранее</h3><p>Проверьте сезон, прогноз погоды, состояние дорог и время в пути до выбранного места.</p></article>
+        <article class="tip-card"><span class="tip-number">02</span><span class="tip-icon">⌁</span><h3>Берегите природу</h3><p>Забирайте мусор с собой, оставайтесь на маршрутах и уважайте местные традиции.</p></article>
+        <article class="tip-card"><span class="tip-number">03</span><span class="tip-icon">✳</span><h3>Соберите необходимое</h3><p>Вода, удобная обувь, одежда слоями, аптечка и заряженный телефон пригодятся в дороге.</p></article>
+      </div>
+    </section>
+
+    <section class="suggest-section" id="suggest">
+      <div class="section-wrap suggest-layout">
+        <div class="suggest-copy"><p class="eyebrow light"><span></span> Поделитесь открытием</p><h2>Предложить<br><em>маршрут</em></h2><p>Поделитесь своим маршрутом, историей или идеей путешествия по Казахстану. Возможно, именно ваш маршрут вдохновит кого-то на большое приключение!</p><div class="suggest-note"><span>✳</span> Каждая большая история начинается с одного шага.</div></div>
+        <form class="suggest-form" id="routeForm">
+          <div class="form-heading"><span>ВАША ИСТОРИЯ</span><span>01 — 03</span></div>
+          <label for="routeName">Название маршрута <b>*</b></label><input id="routeName" name="routeName" required placeholder="Например, Выходные у Кольсайских озёр">
+          <div class="form-row"><div><label for="routePlace">Куда отправимся? <b>*</b></label><input id="routePlace" name="routePlace" required placeholder="Место или регион"></div><div><label for="routeDuration">Длительность</label><select id="routeDuration" name="routeDuration"><option value="">Выберите</option><option>1 день</option><option>2–3 дня</option><option>4–7 дней</option><option>Больше недели</option></select></div></div>
+          <label for="routeStory">Расскажите о маршруте <b>*</b></label><textarea id="routeStory" name="routeStory" rows="4" required placeholder="Что стоит увидеть? Чем это место особенное?"></textarea>
+          <label for="routePhoto" class="upload-label">Прикрепить фото <span>JPG, PNG — по желанию</span></label><input class="file-input" id="routePhoto" name="routePhoto" type="file" accept="image/*">
+          <label for="routeEmail">Ваш email <b>*</b></label><input id="routeEmail" name="routeEmail" type="email" required placeholder="name@example.com">
+          <button class="button button-accent" type="submit">Отправить маршрут <span>↗</span></button>
+          <p class="form-message" id="formMessage" role="status"></p>
+          <p class="form-disclaimer">Нажимая «Отправить маршрут», вы соглашаетесь на обработку указанных данных.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="newsletter">
+    <div class="footer-top">
+      <div class="footer-brand"><a class="brand brand-footer" href="#home"><span class="brand-mark">N<span>·</span></span><span class="brand-name">Nomad <b>Stories</b></span></a><p>Истории, которые ведут дальше.<br>Путешествия, которые остаются с вами.</p></div>
+      <div class="footer-nav"><span class="footer-label">ИССЛЕДУЙТЕ</span><a href="#home">Главная</a><a href="#stories">Истории</a><a href="#destinations">Направления</a><a href="#tips">Советы</a><a href="#suggest">Предложить маршрут</a></div>
+      <div class="newsletter"><span class="footer-label">ПИСЬМА ИЗ ПУТЕШЕСТВИЙ</span><h3>Подписывайтесь на наши истории</h3><p>Получайте новые маршруты, советы и вдохновение прямо на почту.</p><form id="newsletterForm" class="newsletter-form"><input type="email" id="newsletterEmail" required placeholder="Ваш email" aria-label="Ваш email"><button type="submit" aria-label="Подписаться">↗</button></form><p id="newsletterMessage" class="newsletter-message" role="status"></p></div>
+      <div class="footer-callout">Казахстан<br><em>ждёт</em><span>↓</span></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Nomad Stories. Все права защищены.</span><div><a href="#newsletter">Политика конфиденциальности</a><a href="#newsletter">Условия использования</a></div><a href="#home" class="back-top">Наверх ↑</a></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
